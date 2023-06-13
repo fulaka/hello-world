@@ -1,0 +1,23 @@
+/* flex布局
+     */
+     .flex {
+        display: flex;
+        /* background-color: red; */
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .flex1 {
+        flex: 1;
+    }
+
+    .baise {
+        background-color: white;
+    }
+
+    .mrg10px {
+        margin-top: 10px;
+    }
+  

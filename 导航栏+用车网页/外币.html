@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外币兑换</title>
+</head>
+<style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* 幻灯片容器 */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* 标题文本 */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* 数字文本（1/3 等）*/
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* 点/项目符号/指标 */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* 渐变动画 */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* 在较小的屏幕上，减小文本大小 */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+
+
+    /* 下部份 */
+body {
+	background-color: #ffffff;
+	font-style: normal;
+}
+
+.w {
+	width: 1190px;
+	margin:0 auto;
+  padding-left: 146px;
+}
+.help {
+	border-bottom: 1px solid #DEDEDE;
+	height: 262px;
+	padding-top: 35px;
+
+}
+
+.help dl {
+	width: 192px;
+	float: left;
+}
+ 
+.help dt {
+	height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #666;
+}
+
+.help dd {
+	height: 22px;
+	font-size: 12px;
+}
+/*版权*/
+.copyright {
+	padding-top: 20px;
+	color: #666;
+	font-size: 12px;
+	text-align: center;
+}
+
+.copyright span {
+	margin: 0 10px;
+}
+
+.copyright div {
+	margin-top: 15px;
+}
+
+.copyright div p {
+	line-height: 22px;
+}
+
+.footerIcon a {
+	width: 103px;
+	height: 32px;
+	display: inline-block;
+	background: url(../images/sprite.footer.png) no-repeat -206px 0;
+	margin: 20px 4px 0;
+} 
+/*行内块可以用text-align：center实现居中*/
+
+.footerIcon a:nth-child(2) {
+	background-position: -206px -37px;
+} 
+.footerIcon a:nth-child(3) {
+	background-position: -206px -74px;
+} 
+.footerIcon a:nth-child(4) {
+	background-position: -206px -110px;
+} 
+.footerIcon a:nth-child(5) {
+	background-position: -206px -148px;
+} 
+
+
+    </style>
+<body>
+  <!-- 自动幻灯片,每 2 秒更改一次图像 -->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="/image/rad.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./image/blue.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./image/white.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+  <img src="./image/waibi.png" alt="" width="83%" height="100%" style="padding-left: 250px;">
+   <!-- 帮助模块 -->
+   <div class="w help">=
+    <div class="fl">
+      <dl>
+        <dt>旅游资讯</dt>
+          <dd><a>宾馆索引</a></dd>
+          <dd><a>机票索引</a></dd>
+          <dd><a>旅游索引</a></dd>
+          <dd><a>游轮索引</a></dd>
+          <dd><a>网站索引</a></dd>
+          <dd><a>火车票索引</a></dd>
+      </dl>
+      <dl>
+        <dt>加盟合作</dt>
+          <dd><a>目的地及景区合作</a></dd>
+          <dd><a>代理合作</a></dd>
+          <dd><a>酒店加盟</a></dd>
+          <dd><a>更多加盟合作</a></dd>
+
+
+      </dl>
+      <dl>
+        <dt>关于闽游</dt>
+          <dd><a>联系我们</a></dd>
+          <dd><a>诚招英才</a></dd>
+          <dd><a>企业公民</a></dd>
+          <dd><a>隐私政策</a></dd>
+      </dl>
+      <dl>
+        <dt>咨询电话</dt>
+          <dd><a>闽北：123456</a></dd>
+          <dd><a>闽南：234567</a></dd>
+          <dd><a>闽西：345678</a></dd>
+          <dd><a>闽东：456789</a></dd>
+          
+      </dl>
+      
+      <dl>
+        <dt>用闽游APP打开</dt>
+        <img src="/image/b二维码.jpg" alt="" width="120" height="120">
+      </dl>
+    </div>
+  </div>
+  <div class="w copyright">
+    <p>
+      <a>关于我们</a>
+      <span>|</span>
+      <a>联系我们</a>
+      <span>|</span>
+      <a>联系客服</a>
+      <span>|</span>
+      <a>合作招商</a>
+      <span>|</span>
+      <a>商家帮助</a>
+      <span>|</span>
+      <a>营销中心</a>
+      <span>|</span>
+      <a>手机闽游</a>
+      <span>|</span>
+      <a>友情链接</a>
+      <span>|</span>
+      <a>销售联盟</a>
+      <span>|</span>
+      <a>闽游社区</a>
+      <span>|</span>
+      <a>风险监测</a>
+      <span>|</span>
+      <a>隐私政策</a>
+      
+    </p>
+    <div>
+      <p>闽公网安备 11000002000088号<span>|</span>ICP证：闽F1-123456789<span>|</span>闽ICP备098765<span>
+      <p>互联网药品信息服务资格证<span>|</span>出版物经营许可证|网络文化经营许可证京网文[2014]2148-348号<span>|</span>违法和不良信息举报电话：4006561155</p>
+      <p>Copyright © 2004 - 2019  闽游tmall.com 版权所有<span>|</span>消费者维权热线：444444444444经营证照<span>|</span>(闽)网械平台备字(2023)第0号<span>|</span>营业执照</p>
+    </div>
+</footer>
+<!-- 底部结束 -->
+</body>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // 每 2 秒更改一次图像
+    }
+    </script>
+</html>
